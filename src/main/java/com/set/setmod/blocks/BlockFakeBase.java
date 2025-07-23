@@ -8,9 +8,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-
-import javax.annotation.Nullable;
-
 //做没有碰撞的方块用的
 public class BlockFakeBase extends Block {
     // 构造函数，初始化BlockBase对象
@@ -22,11 +19,17 @@ public class BlockFakeBase extends Block {
         // 注册当前方块到游戏世界中
         UtilRegister.initBlock(this, name);
     }
-    @Override
+    @Override //表示为非完整方块
     public boolean isFullCube(IBlockState state)
     {
         return false;
     }
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        // 返回false，表示该方块不是不透明的
+        return true;
+    }
+    //失去碰撞箱
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos)
     {
         return null;

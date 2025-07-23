@@ -16,6 +16,5 @@ tile.block2.name=错误
 tile.block3.name=错误的草方块
 tile.block4.name=错误的石头
 tile.portal.name=传送门方块（？）
-tile.portal1.name=传送门方块2（？）
 setmod.potion.first=第一个
 setmod.potion.second=观察
