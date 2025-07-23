@@ -30,6 +30,7 @@ public class ItemRegister {
     public static final ItemSword SWORD_CLOSE= new ItemSward("sward1",ItemSward.KILL);
     public static final ItemAvalon AVALON = new ItemAvalon("avalon");
     public static final ItemBolg BOLG = new ItemBolg("bolg", Item.ToolMaterial.DIAMOND);
+    public static final ItemBowBase BOWS = new ItemBowBase("bows");
     @SubscribeEvent
     //物品注册表
     public static void ItemFirst(RegistryEvent.Register<Item> event) {

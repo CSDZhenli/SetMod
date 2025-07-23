@@ -28,6 +28,7 @@ public class BlocksRegister {
     public static final Block BLOCK_2= new BlockBase("block2", Material.ROCK);
     public static final Block BLOCK_3= new BlockGrass("block3", Material.GRASS, SoundType.PLANT).setHardness(1.5F);
     public static final Block BLOCK_4= new BlockBase("block4", Material.ROCK).setHardness(1.5F);
+    public static final Block BLOCK_5= new BlockPortalBase("block5");
     @SubscribeEvent
     //注册方块
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
