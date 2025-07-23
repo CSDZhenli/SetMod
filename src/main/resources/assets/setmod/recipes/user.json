@@ -1,0 +1,14 @@
+{
+  "result": {
+    "item": "setmod:user"
+  },
+  "ingredients": [
+    [{
+      "item": "minecraft:book"
+    }],
+    [{
+      "item": "minecraft:flint"
+    }]
+  ],
+  "type":"forge:ore_shapeless"
+}

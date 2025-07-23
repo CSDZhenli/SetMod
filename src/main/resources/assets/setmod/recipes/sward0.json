@@ -1,0 +1,11 @@
+{
+  "result": {
+    "item": "setmod:sward0"
+  },
+  "ingredients": [
+    [{
+      "item": "setmod:sward1"
+    }]
+  ],
+  "type":"forge:ore_shapeless"
+}

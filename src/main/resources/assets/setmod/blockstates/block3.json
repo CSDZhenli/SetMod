@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "setmod:block3" },
+      { "model": "setmod:block3", "y": 90 },
+      { "model": "setmod:block3", "y": 180 },
+      { "model": "setmod:block3", "y": 270 }
+    ]
+  }
+}

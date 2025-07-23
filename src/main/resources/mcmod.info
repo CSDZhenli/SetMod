@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "setmod",
+    "name": "Set Mod",
+    "description": "Set mod is my first mod.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Zhenli"],
+    "credits": "It's a small mod to service video",
+    "logoFile": "assets/setmod/textures/setmod_logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

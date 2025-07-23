@@ -1,0 +1,18 @@
+#PARSE_ESCAPES
+#items
+item.user.name=user book
+item.base.name=Text the base
+item.kill_item.name=§c§lNormal item(?)
+item.sward0.name=Excalibur
+item.sward1.name=Excalibur_invisible
+item.avalon.name=Avalon
+item.thethird.name=The third
+item.bolg.name=GAE BOLG
+itemGroup.setmod.tab1=ITEM
+itemGroup.setmod.tab2=BLOCKS
+tile.block1.name=Light
+tile.block2.name=Error
+tile.block3.name=Error_Grass
+tile.block4.name=Error_Stone
+setmod.potion.first=Firstly
+setmod.potion.second=Watch

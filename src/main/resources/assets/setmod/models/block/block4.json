@@ -1,0 +1,25 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "setmod:blocks/block4",
+    "bottom": "setmod:blocks/block4_bottom",
+    "top": "setmod:blocks/block4_top",
+    "north": "setmod:blocks/block2",
+    "south": "setmod:blocks/stone",
+    "west": "setmod:blocks/block4_west",
+    "east": "setmod:blocks/block4"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "cullface": "down" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up"},
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#north",   "cullface": "north" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#south",   "cullface": "south" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#west",   "cullface": "west" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#east",   "cullface": "east" }
+      }
+    }
+  ]
+}
