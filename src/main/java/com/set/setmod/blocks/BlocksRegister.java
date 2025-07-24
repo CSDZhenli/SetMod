@@ -30,6 +30,9 @@ public class BlocksRegister {
     public static final Block BLOCK_4= new BlockBase("block4", Material.ROCK).setHardness(1.5F);
     public static final Block BLOCK_5= new BlockFakeBase("portal",Material.ROCK).setHardness(-1);
     public static final Block BLOCK_6= new BlockFakeBase("portal1",Material.ROCK).setHardness(-1);
+    public static final Block BLOCK_7= new BlockBase("null",Material.ROCK).setHardness(-1);
+    public static final Block BLOCK_8= new BlockBase("null1",Material.ROCK).setHardness(-1);
+    public static final Block BLOCK_9= new BlockGlasses("glass",Material.ROCK).setHardness(-1);
     @SubscribeEvent
     //注册方块
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
