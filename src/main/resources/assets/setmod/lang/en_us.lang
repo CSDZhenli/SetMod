@@ -20,5 +20,6 @@ tile.portal1.name=Portal2WE
 tile.null.name=Null
 tile.null1.name=Null1
 tile.glass.name=Glass
+tile.dirt.name=Dirt(?)
 setmod.potion.first=Firstly
 setmod.potion.second=Watch

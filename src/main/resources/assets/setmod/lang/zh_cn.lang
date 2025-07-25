@@ -20,5 +20,6 @@ tile.portal1.name=传送门方块WE（？）
 tile.null.name=空
 tile.null1.name=空1
 tile.glass.name=新玻璃
+tile.dirt.name=泥土（？）
 setmod.potion.first=第一个
 setmod.potion.second=观察
