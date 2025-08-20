@@ -34,7 +34,9 @@ public class BlocksRegister {
     public static final Block BLOCK_8= new BlockBase("null1",Material.ROCK).setHardness(-1);
     public static final Block BLOCK_9= new BlockGlasses("glass",Material.ROCK).setHardness(-1);
     public static final Block BLOCK_10= new BlockNewBase("dirt",Material.ROCK,SoundType.GROUND).setHardness(1.5F);
-    public static final Block BLOCK_11= new BlockBase("netherreactor", Material.ROCK).setHardness(1F);
+    public static final Block BLOCK_11= new BlockNetherReactor("netherreactor", Material.ROCK).setHardness(1F);
+    public static final Block BLOCK_12= new BlockBase("glowingobsidian", Material.ROCK).setHardness(1F).setLightLevel(12F);
+    public static final Block BLOCK_13= new BlockBase("netherreactora", Material.ROCK).setHardness(1F);
     @SubscribeEvent
     //注册方块
     public static void registerBlocks(RegistryEvent.Register<Block> event) {

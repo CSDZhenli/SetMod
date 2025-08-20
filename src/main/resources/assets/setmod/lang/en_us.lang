@@ -22,5 +22,7 @@ tile.null1.name=Null1
 tile.glass.name=Glass
 tile.dirt.name=Dirt(?)
 tile.netherreactor.name=NetherReactor
+tile.netherreactora.name=NetherReactor_Active
+tile.glowingobsidian.name=GlowingObsidian
 setmod.potion.first=Firstly
 setmod.potion.second=Watch

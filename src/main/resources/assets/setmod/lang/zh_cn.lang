@@ -22,5 +22,7 @@ tile.null1.name=空1
 tile.glass.name=新玻璃
 tile.dirt.name=泥土（？）
 tile.netherreactor.name=下界反应核
+tile.netherreactora.name=激活的下界反应核
+tile.glowingobsidian.name=发光黑曜石
 setmod.potion.first=第一个
 setmod.potion.second=观察
