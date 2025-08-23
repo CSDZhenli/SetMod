@@ -25,5 +25,6 @@ tile.netherreactor.name=下界反应核
 tile.netherreactora.name=激活的下界反应核
 tile.glowingobsidian.name=发光黑曜石
 tile.update.name=客户端请求占位符方块
+tile.water.name=假水
 setmod.potion.first=第一个
 setmod.potion.second=观察

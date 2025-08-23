@@ -25,5 +25,6 @@ tile.netherreactor.name=NetherReactor
 tile.netherreactora.name=NetherReactor_Active
 tile.glowingobsidian.name=GlowingObsidian
 tile.update.name=client_request_placeholder_block
+tile.water.name=water(?)
 setmod.potion.first=Firstly
 setmod.potion.second=Watch
