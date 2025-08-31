@@ -39,6 +39,7 @@ public class BlocksRegister {
     public static final Block BLOCK_13= new BlockBase("netherreactora", Material.ROCK).setHardness(1F);
     public static final Block BLOCK_14= new BlockFakeBase("update",Material.GRASS).setHardness(-1);
     public static final Block BLOCK_15= new BlockBase("water",Material.ROCK).setHardness(-1);
+    public static final Block BLOCK_16= new BlockChain("chain",Material.IRON).setHardness(5F);
     @SubscribeEvent
     //注册方块
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
