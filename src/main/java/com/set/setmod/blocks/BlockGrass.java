@@ -41,6 +41,6 @@ public class BlockGrass extends Block {
                 public int colorMultiplier(IBlockState state, @Nullable IBlockAccess worldIn, @Nullable BlockPos pos, int tintIndex) {
                     return worldIn != null && pos !=null ? BiomeColorHelper.getFoliageColorAtPos(worldIn, pos) : ColorizerFoliage.getFoliageColorBasic();
                 }
-            },BlocksRegister.BLOCK_3);
+            },BlocksRegister.BLOCK_3,BlocksRegister.BLOCK_17,BlocksRegister.BLOCK_18);
     }
 }

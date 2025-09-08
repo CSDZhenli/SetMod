@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "setmod:newgrass1" },
+      { "model": "setmod:newgrass1", "y": 90 },
+      { "model": "setmod:newgrass1", "y": 180 },
+      { "model": "setmod:newgrass1", "y": 270 }
+    ]
+  }
+}

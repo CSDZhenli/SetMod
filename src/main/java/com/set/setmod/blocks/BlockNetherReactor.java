@@ -23,13 +23,37 @@ public class BlockNetherReactor extends Block {
     }
     // 方块被右键时的方法
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
-                                    EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+                                    EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ){
         // 如果不是客户端
         if(!worldIn.isRemote) {
             //获取激活下界反应核的默认状态
             IBlockState states = BlocksRegister.BLOCK_13.getDefaultState();
+            //获取激活的黑曜石的默认状态
+            IBlockState states0 = BlocksRegister.BLOCK_12.getDefaultState();
             // 在该位置生成激活的下界反应堆
             worldIn.setBlockState(pos, states);
+            // 生成第一层
+            worldIn.setBlockState(pos.down(), states0);
+            worldIn.setBlockState(pos.down().east(), states0);
+            worldIn.setBlockState(pos.down().south(), states0);
+            worldIn.setBlockState(pos.down().north(), states0);
+            worldIn.setBlockState(pos.down().west(), states0);
+            //冷却到了，放第二层
+            worldIn.setBlockState(pos.east().south(), states0);
+            worldIn.setBlockState(pos.east().north(), states0);
+            worldIn.setBlockState(pos.west().south(), states0);
+            worldIn.setBlockState(pos.west().north(), states0);
+            //冷却到了，放第三层
+            worldIn.setBlockState(pos.up(), states0);
+            worldIn.setBlockState(pos.up().east(), states0);
+            worldIn.setBlockState(pos.up().south(), states0);
+            worldIn.setBlockState(pos.up().north(), states0);
+            worldIn.setBlockState(pos.up().west(), states0);
+            //冷却到了，放第四层
+            worldIn.setBlockState(pos.down().east().south(), states0);
+            worldIn.setBlockState(pos.down().east().north(), states0);
+            worldIn.setBlockState(pos.down().west().south(), states0);
+            worldIn.setBlockState(pos.down().west().north(), states0);
             return true;
         }
         return true;
