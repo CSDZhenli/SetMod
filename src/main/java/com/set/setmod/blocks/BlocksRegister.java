@@ -42,6 +42,8 @@ public class BlocksRegister {
     public static final Block BLOCK_16= new BlockChain("chain",Material.IRON).setHardness(5F);
     public static final Block BLOCK_17= new BlockNewGrass("newgrass", Material.GRASS, SoundType.PLANT).setHardness(1.5F);
     public static final Block BLOCK_18= new BlockNewGrass("newgrass1", Material.GRASS, SoundType.PLANT).setHardness(1.5F);
+    public static final Block BLOCK_19= new BlockCarema("carema", Material.ROCK).setHardness(5F);
+    public static final Block BLOCK_20= new BlockBoom("caremaboom", Material.ROCK).setHardness(1.5F);
     @SubscribeEvent
     //注册方块
     public static void registerBlocks(RegistryEvent.Register<Block> event) {

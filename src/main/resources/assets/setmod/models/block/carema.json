@@ -1,0 +1,29 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "block/cube_all",
+	"textures": {
+		"2": "setmod:blocks/camera0",
+		"4": "setmod:blocks/carema1",
+		"5": "setmod:blocks/carema3",
+		"6": "setmod:blocks/carema4",
+		"7": "setmod:blocks/carema5",
+		"8": "setmod:blocks/carema2",
+		"particle": "setmod:blocks/carema2"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 8, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#4"},
+				"east": {"uv": [0, 0, 8, 8], "texture": "#2"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#7"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#6"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#8"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#5"}
+			}
+		}
+	]
+}

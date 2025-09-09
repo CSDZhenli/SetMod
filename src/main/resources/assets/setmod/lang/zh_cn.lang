@@ -29,5 +29,7 @@ tile.water.name=假水
 tile.chain.name=系链
 tile.newgrass.name=错误的草方块（新）
 tile.newgrass1.name=错误的草方块（新1）
+tile.carema.name=相机
+tile.caremaboom.name=相机支架(?)
 setmod.potion.first=第一个
 setmod.potion.second=观察
