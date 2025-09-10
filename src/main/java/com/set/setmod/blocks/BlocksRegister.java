@@ -36,7 +36,7 @@ public class BlocksRegister {
     public static final Block BLOCK_10= new BlockNewBase("dirt",Material.ROCK,SoundType.GROUND).setHardness(1.5F);
     public static final Block BLOCK_11= new BlockNetherReactor("netherreactor", Material.ROCK).setHardness(1F);
     public static final Block BLOCK_12= new BlockBase("glowingobsidian", Material.ROCK).setHardness(1F).setLightLevel(12F);
-    public static final Block BLOCK_13= new BlockBase("netherreactora", Material.ROCK).setHardness(1F);
+    public static final Block BLOCK_13= new BlockNetherReactorActive("netherreactora", Material.ROCK).setHardness(1F);
     public static final Block BLOCK_14= new BlockFakeBase("update",Material.GRASS).setHardness(-1);
     public static final Block BLOCK_15= new BlockBase("water",Material.ROCK).setHardness(-1);
     public static final Block BLOCK_16= new BlockChain("chain",Material.IRON).setHardness(5F);

@@ -14,9 +14,14 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockNetherReactor extends Block {
+public class BlockNetherReactorActive extends Block {
+    //放置所用函数
+    boolean first = true;
+    boolean second = true;
+    boolean third = true;
+    boolean fourth = true;
     // 构造函数，初始化BlockBase对象
-    public BlockNetherReactor(String name, Material material) {
+    public BlockNetherReactorActive(String name, Material material) {
         // 调用父类Block的构造函数，传入材质参数
         super(material);
         // 设置方块类默认放方块Tabs
@@ -24,56 +29,63 @@ public class BlockNetherReactor extends Block {
         // 注册当前方块到游戏世界中
         UtilRegister.initBlock(this, name);
     }
-    // 方块被右键时的方法
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
-                                    EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ){
-        // 如果不是客户端
-        if(!worldIn.isRemote) {
-            //获取激活下界反应核的默认状态
-            IBlockState states = BlocksRegister.BLOCK_13.getDefaultState();
-            // 在该位置生成激活的下界反应堆
-            worldIn.setBlockState(pos, states);
-            return true;
+    //当该方块被放置时使用的函数
+
+    @Override
+    public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
+        if (!worldIn.isRemote){
+            //放东西
+            worldIn.scheduleBlockUpdate(pos,this,5,0);
         }
-        return true;
     }
     //更新时使用该函数
     @Override
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
-        if(!worldIn.isRemote){
+        if (!worldIn.isRemote) {
             //获取激活的黑曜石的默认状态
             IBlockState states0 = BlocksRegister.BLOCK_12.getDefaultState();
-            boolean first=true;
-            boolean second=true;
-            boolean third=true;
-            if(first){
+            if (first) {
                 // 生成第一层
                 worldIn.setBlockState(pos.down(), states0);
                 worldIn.setBlockState(pos.down().east(), states0);
                 worldIn.setBlockState(pos.down().south(), states0);
                 worldIn.setBlockState(pos.down().north(), states0);
                 worldIn.setBlockState(pos.down().west(), states0);
-                first=false;
-            }else if(second){
+                //调用该函数，进行下一次更新
+                worldIn.scheduleBlockUpdate(pos,this,5,0);
+                first = false;
+            } else if (second) {
                 //生成第二层
                 worldIn.setBlockState(pos.east().south(), states0);
                 worldIn.setBlockState(pos.east().north(), states0);
                 worldIn.setBlockState(pos.west().south(), states0);
                 worldIn.setBlockState(pos.west().north(), states0);
-                second=false;
-            }else if(third){
+                //调用该函数，进行下一次更新
+                worldIn.scheduleBlockUpdate(pos,this,5,0);
+                second = false;
+            } else if (third) {
                 //生成第三层
                 worldIn.setBlockState(pos.up(), states0);
                 worldIn.setBlockState(pos.up().east(), states0);
                 worldIn.setBlockState(pos.up().south(), states0);
                 worldIn.setBlockState(pos.up().north(), states0);
                 worldIn.setBlockState(pos.up().west(), states0);
-                third=false;
-            }else{
+                //调用该函数，进行下一次更新
+                worldIn.scheduleBlockUpdate(pos,this,5,0);
+                third = false;
+            } else if(fourth){
                 worldIn.setBlockState(pos.down().east().south(), states0);
                 worldIn.setBlockState(pos.down().east().north(), states0);
                 worldIn.setBlockState(pos.down().west().south(), states0);
                 worldIn.setBlockState(pos.down().west().north(), states0);
+                //调用该函数，进行下一次更新
+                worldIn.scheduleBlockUpdate(pos,this,5,0);
+                fourth= false;
+            }else{
+                first=true;
+                second=true;
+                third=true;
+                fourth=true;
             }
         }
     }
